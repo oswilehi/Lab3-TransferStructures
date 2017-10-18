@@ -1,5 +1,6 @@
-var key , value ;
+var key ="", value="" ;
 var dictionary = new Array();
+
 function AddToDictionary() {
     key = document.getElementById("key").value;
     if (ValueAndTypeIsCorrect())
@@ -35,13 +36,8 @@ function ValueAndTypeIsCorrect() {
 
 
 function ShowDataJson(){
-    //var output = document.getElementById("output");
-    //output.innerHTML = JSON.stringify(dictionary);
-
-    //document.getElementById("output").value = JSON.stringify(dictionary);
-    alert(JSON.stringify(dictionary));
-    document.getElementById("output").value = JSON.stringify(dictionary);
-    //el text area solo lo estoy usando para ver que onda
+    var output = document.getElementById("output");
+    output.innerHTML = JSON.stringify(dictionary);
 
 }
 function SelectType(){

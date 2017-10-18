@@ -7,11 +7,11 @@
     <title>Laboratorio 3</title>
 </head>
 
-<body onload="createDictionary()">
+<body>
 
     <h1>Estructuras de transferencias de datos</h1>
 
-    <form>
+    <form method=POST>
         Llave: <br>
         <input type="text" id="key"><br> 
         Valor: <br>
@@ -20,8 +20,17 @@
         <input type="radio" name="type" id="number"> Número<br>
         <input type="radio" name="type" id="string"> String <br>
         <input type="radio" name="type" id="boolean"> Booleano <br>
-        <input type="submit" name="submit" onclick="addToDictionary()" value="Ingresar"><br>
+        <button type="button" onclick="AddToDictionary()">Ingresar</button><br>
+        Visualización: <br>
+        <input type="radio" name="type" id="xml"> XML<br>
+        <input type="radio" name="type" id="json"> JSON <br>
+        <button type="button" onclick="ShowDataJson()">Mostrar</button><br>
+        <div id = "output">
+            
+        </div>
+        <!--<textarea id = "output" name = "output" > mostrar </textarea> -->
     </form>
 </body>
 
 </html>
+
