@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <script src = "indexFunctions.js"></script>
+    <title>Laboratorio 3</title>
+</head>
+
+<body onload="createDictionary()">
+
+    <h1>Estructuras de transferencias de datos</h1>
+
+    <form>
+        Llave: <br>
+        <input type="text" id="key"><br> 
+        Valor: <br>
+        <input type="text" id="value"><br> 
+        Tipo de valor: <br>
+        <input type="radio" name="type" id="number"> Número<br>
+        <input type="radio" name="type" id="string"> String <br>
+        <input type="radio" name="type" id="boolean"> Booleano <br>
+        <input type="submit" name="submit" onclick="addToDictionary()" value="Ingresar"><br>
+    </form>
+</body>
+
+</html>
