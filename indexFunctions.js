@@ -1,10 +1,22 @@
-var key, value;
-function addToDictionary() {
+var key , value ;
+var dictionary = new Array();
+function AddToDictionary() {
     key = document.getElementById("key").value;
     if (ValueAndTypeIsCorrect())
         value = document.getElementById("value").value;
-
-    dictionary[key] = value;
+    if(key === "" || value === "" )
+        alert("Fill the blanks please");
+    else
+        {
+            dictionary.push({
+                    dicKey : key, 
+                    dicValue: value
+               
+            });
+        }
+   
+    alert(dictionary[0].dicKey + dictionary[0].dicValue);
+    
 }
 
 // Verifica que el valor y el tipo seleccionado guarden concordancia
@@ -21,7 +33,21 @@ function ValueAndTypeIsCorrect() {
     }
 }
 
-// Crea un diccionario vacio
-function createDictionary() {
-    var dictionary = {};
+
+function ShowDataJson(){
+    //var output = document.getElementById("output");
+    //output.innerHTML = JSON.stringify(dictionary);
+
+    //document.getElementById("output").value = JSON.stringify(dictionary);
+    alert(JSON.stringify(dictionary));
+    document.getElementById("output").value = JSON.stringify(dictionary);
+    //el text area solo lo estoy usando para ver que onda
+
+}
+function SelectType(){
+    if(document.getElementById("xml").checked){
+        //show data type xml
+    }
+    else
+        ShowDataJson();
 }
