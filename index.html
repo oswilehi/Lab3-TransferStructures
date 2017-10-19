@@ -17,18 +17,19 @@
         Valor: <br>
         <input type="text" id="value"><br> 
         Tipo de valor: <br>
-        <input type="radio" name="type" id="number"> Número<br>
+        <input type="radio" name="type" id="number"> Número (int, float, etc.)<br>
         <input type="radio" name="type" id="string"> String <br>
-        <input type="radio" name="type" id="boolean"> Booleano <br>
+        <input type="radio" name="type" id="boolean"> Booleano (verdadero, falso)<br>
         <button type="button" onclick="AddToDictionary()">Ingresar</button><br>
         Visualización: <br>
         <input type="radio" name="type" id="xml"> XML<br>
         <input type="radio" name="type" id="json"> JSON <br>
-        <button type="button" onclick="ShowDataJson()">Mostrar</button><br>
-        <div id = "output">
+        <button type="button" onclick="SelectType()">Mostrar</button><br>
+        <!--<div id = "output">
             
-        </div>
-        <!--<textarea id = "output" name = "output" > mostrar </textarea> -->
+        </div>-->
+
+        <textarea id = "output"></textarea>
     </form>
 </body>
 
