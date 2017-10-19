@@ -7,30 +7,36 @@
     <title>Laboratorio 3</title>
 </head>
 
-<body>
+<body style="background-color:#7A73A8;color:white;padding:20px;">
+    
+<h1>Estructuras de transferencias de datos</h1>
 
-    <h1>Estructuras de transferencias de datos</h1>
-
-    <form method=POST>
+<form method=POST>
+    <fieldset style="background-color:#598B7E;color:white;padding:20px;">
+        <legend>Ingreso de Llave-Valor:
+        </legend>
         Llave: <br>
         <input type="text" id="key"><br> 
         Valor: <br>
         <input type="text" id="value"><br> 
         Tipo de valor: <br>
-        <input type="radio" name="type" id="number"> Número (int, float, etc.)<br>
+        <input type="radio" name="type" id="number"> Número<br>
         <input type="radio" name="type" id="string"> String <br>
-        <input type="radio" name="type" id="boolean"> Booleano (verdadero, falso)<br>
+        <input type="radio" name="type" id="boolean"> Booleano <br>
         <button type="button" onclick="AddToDictionary()">Ingresar</button><br>
-        Visualización: <br>
+    </fieldset>
+    <fieldset style="background-color:#598B7E;color:white;padding:20px;">
+        <legend>Tipo de Estructuras:
+        </legend>             
         <input type="radio" name="type" id="xml"> XML<br>
         <input type="radio" name="type" id="json"> JSON <br>
         <button type="button" onclick="SelectType()">Mostrar</button><br>
-        <!--<div id = "output">
-            
-        </div>-->
-
-        <textarea id = "output"></textarea>
-    </form>
+    </fieldset>
+    <textarea id = "output"></textarea>
+        
+    
+    
+</form>
 </body>
 
 </html>
